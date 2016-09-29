@@ -4,6 +4,8 @@
 
 * Google Compute Engine account
 * `gcloud` cli configured
+* docker >1.12 installed
+* docker-machine installed
 
 
 # Setup the Swarm cluster
@@ -13,7 +15,7 @@ The following actions will be done by the script
 - Join masters/nodes
 
 ```
-./setup-cluster.sh
+./setup-cluster.sh -p mygcp42 --name clusterfoo --managers 3 --workers 2
 ```
 
 ```
